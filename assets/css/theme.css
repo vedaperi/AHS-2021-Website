@@ -356,6 +356,10 @@ summary {
   cursor: pointer;
 }
 
+.summary h1 {
+  align-self: center;
+}
+
 template {
   display: none;
 }
@@ -593,12 +597,53 @@ pre code {
   overflow-y: scroll;
 }
 
+.question {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.option {
+  padding: 0.5rem;
+  color: #00000095;
+  background: rgba(255, 255, 255, 0.1);
+  width: 80%;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.quiz-container {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px white;
+  padding: 3rem;
+  text-shadow: 0 1px #00000010;
+  width: 60%;
+  margin: 1.0rem auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(360deg, transparent, #ffffff);
+  min-height: 60vh;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 50%;
+
 }
 
 @media (min-width: 576px) {
@@ -6127,6 +6172,22 @@ button.close {
   border: 0;
 }
 
+button.previous {
+  background: #c84630;
+}
+
+button.next {
+  background: #3c91e6;
+}
+
+button.restart {
+  background: #0cf574;
+  color: #00000050;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+}
+
 a.close.disabled {
   pointer-events: none;
 }
@@ -7999,7 +8060,7 @@ button.bg-navy:focus {
     -ms-flex-align: end !important;
         align-items: flex-end !important;
   }
-  .align-items-lg-center {
+  .center {
     -ms-flex-align: center !important;
         align-items: center !important;
   }
@@ -19705,6 +19766,22 @@ label.btn {
 ------------------------------------*/
 .video-player {
   position: relative;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-player-preview {
