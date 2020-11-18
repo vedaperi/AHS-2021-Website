@@ -419,6 +419,24 @@ h6, .h6 {
   font-weight: 400;
 }
 
+.quizintrobox {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 30px;
+    padding: 11.5px 17px;
+	max-width: 650px;
+}
+
+.section-heading {
+	position: relative;
+	padding-bottom: 15px;
+	margin: -20px 0 10px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+
 .display-1 {
   font-size: 6rem;
   font-weight: 600;
@@ -12403,7 +12421,7 @@ a.text-navy:hover, a.text-navy:focus {
 }
 
 .invisible {
-  visibility: hidden !important;
+  display: none !important;
 }
 
 @media print {
@@ -13566,7 +13584,7 @@ button:focus {
   Header Helpers
 ------------------------------------*/
 .header-invisible {
-  display: none;
+  visibility: hidden;
 }
 
 .header-moved-up {
