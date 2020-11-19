@@ -22799,6 +22799,11 @@ label.btn {
   .vh-md-30 {
     height: 30vh;
   }
+
+  .vh-md-35 {
+    height: 35vh;
+  }
+
   .vh-md-70 {
     height: 70vh;
   }
